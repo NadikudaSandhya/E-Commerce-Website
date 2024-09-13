@@ -1,0 +1,49 @@
+/* src/components/Home.css */
+
+.home-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    padding: 20px;
+    background: url('https://www.shutterstock.com/image-photo/online-shopping-concept-cart-bags-260nw-1680067750.jpg') no-repeat center center fixed;
+    background-size: cover;
+    text-align: center;
+    color: #fff; /* Adjust text color for better readability on the background */
+  }
+  
+  .home-title {
+    font-size: 36px;
+    margin-bottom: 30px;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7); /* Add shadow for text readability */
+  }
+  
+  .home-links {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+  }
+  
+  .home-link {
+    display: block;
+    padding: 15px 25px;
+    text-decoration: none;
+    color: #fff;
+    background-color: rgba(0, 123, 255, 0.8); /* Semi-transparent background */
+    border-radius: 5px;
+    font-size: 18px;
+    text-align: center;
+    transition: background-color 0.3s ease;
+  }
+  
+  .home-link:hover {
+    background-color: rgba(0, 56, 133, 0.8); /* Darker shade on hover */
+  }
+  
+  .home-line {
+    margin: 20px 0;
+    width: 80%;
+    border-top: 2px solid rgba(255, 255, 255, 0.6); /* Light line above links */
+  }
+  

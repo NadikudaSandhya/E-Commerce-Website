@@ -1,0 +1,15 @@
+/* General styles for the entire app */
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    color: #333;
+  }
+  
+  input, button {
+    font-family: inherit;
+  }
+  
+  h2 {
+    margin: 0;
+  }
+  

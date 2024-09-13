@@ -1,0 +1,71 @@
+/* Login Container */
+.login-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    background: url('https://images.pexels.com/photos/1103970/pexels-photo-1103970.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500') no-repeat center center fixed;
+    background-size: cover;
+  }
+  
+  /* Login Card */
+  .login-card {
+    background-color: #ffffff;
+    padding: 40px 30px;
+    border-radius: 8px;
+    text-align: center;
+    width: 100%;
+    max-width: 350px;
+    border: 1px solid #dbdbdb;
+  }
+  
+  /* Login Title */
+  .login-title {
+    font-size: 24px;
+    font-weight: 600;
+    color: #262626;
+    margin-bottom: 20px;
+  }
+  
+  /* Input Fields */
+  .login-input {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border-radius: 4px;
+    border: 1px solid #dbdbdb;
+    font-size: 14px;
+    background-color: #fafafa;
+    box-sizing: border-box;
+  }
+  
+  .login-input:focus {
+    outline: none;
+    border-color: #a8a8a8;
+  }
+  
+  /* Login Button */
+  .login-button {
+    width: 100%;
+    padding: 10px;
+    background-color: #0926a6;
+    color: white;
+    font-size: 14px;
+    font-weight: bold;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    margin-top: 10px;
+  }
+  
+  .login-button:hover {
+    background-color: #007cc1;
+  }
+  
+  /* Error Message */
+  .login-error {
+    color: #f44336;
+    margin-top: 10px;
+  }
+  

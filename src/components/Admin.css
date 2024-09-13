@@ -1,0 +1,75 @@
+.admin-container {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    background-image: url('https://via.placeholder.com/1920x1080?text=Background'); /* Replace with your background image */
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    color: white;
+    position: relative;
+    overflow: hidden;
+  }
+  
+  .admin-header {
+    text-align: center;
+    padding: 20px;
+    background: rgba(0, 0, 0, 0.6);
+  }
+  
+  .admin-content {
+    flex-grow: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+    background: rgba(0, 0, 0, 0.4);
+    position: relative;
+    z-index: 1;
+  }
+  
+  .admin-links {
+    margin-bottom: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .admin-link {
+    display: block;
+    margin: 10px 0;
+    padding: 10px 20px;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+    background-color: rgba(255, 255, 255, 0.3);
+    transition: background-color 0.3s, transform 0.3s;
+  }
+  
+  .admin-link:hover {
+    background-color: rgba(255, 255, 255, 0.5);
+    transform: scale(1.05);
+  }
+  
+  .admin-footer {
+    display: flex;
+    justify-content: center;
+    padding: 20px;
+  }
+  
+  .logout-button {
+    padding: 10px 20px;
+    background-color: #f44336;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.3s;
+  }
+  
+  .logout-button:hover {
+    background-color: #d32f2f;
+    transform: scale(1.05);
+  }
+  
