@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import { useNavigate } from 'react-router-dom';
-import './Login.css'; // Make sure this file exists
+import './Login.css'; 
 
 const Login = () => {
   const [username, setUsername] = useState('');
@@ -9,7 +9,6 @@ const Login = () => {
   const navigate = useNavigate();
 
   const handleLogin = () => {
-    // Simulated authentication logic
     if (username === 'admin' && password === 'admin') {
       navigate('/admin');
     } else if (username === 'user' && password === 'user') {

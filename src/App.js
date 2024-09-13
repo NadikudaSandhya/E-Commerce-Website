@@ -1,4 +1,3 @@
-// src/App.js
 import React, { useState, useEffect } from 'react';
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import ProductListing from './components/ProductListing';
@@ -12,13 +11,11 @@ const App = () => {
   const [cartItems, setCartItems] = useState([]);
 
   useEffect(() => {
-    // Load cart from localStorage on initial load
     const savedCart = JSON.parse(localStorage.getItem('cart')) || [];
     setCartItems(savedCart);
   }, []);
 
   useEffect(() => {
-    // Save cart to localStorage whenever cartItems changes
     localStorage.setItem('cart', JSON.stringify(cartItems));
   }, [cartItems]);
 

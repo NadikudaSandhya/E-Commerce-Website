@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import { Link, useNavigate } from 'react-router-dom';
-import './Admin.css'; // Make sure this file exists
+import './Admin.css';
 
 const Admin = () => {
   const [currentSlide, setCurrentSlide] = useState(0);

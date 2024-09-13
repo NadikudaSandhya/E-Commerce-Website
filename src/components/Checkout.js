@@ -5,15 +5,13 @@ import './Checkout.css';
 const Checkout = ({ cartItems }) => {
   const navigate = useNavigate();
 
-  // Calculate the total price
   const calculateTotalPrice = () => {
     return cartItems.reduce((total, item) => total + (item.price * item.quantity), 0).toFixed(2);
   };
 
   const handleConfirmOrder = () => {
-    // Logic to place an order (e.g., API call)
     alert('Order placed successfully!');
-    navigate('/products'); // Redirect to home or confirmation page
+    navigate('/products');
   };
 
   return (

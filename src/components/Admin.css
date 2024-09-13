@@ -2,7 +2,7 @@
     display: flex;
     flex-direction: column;
     min-height: 100vh;
-    background-image: url('https://via.placeholder.com/1920x1080?text=Background'); /* Replace with your background image */
+    background-image: url('https://via.placeholder.com/1920x1080?text=Background');
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;

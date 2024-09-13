@@ -7,7 +7,6 @@ const ProductListing = () => {
   const [filteredProducts, setFilteredProducts] = useState([]);
 
   useEffect(() => {
-    // Fetch products from JSON Server
     fetch('http://localhost:5000/products')
       .then(response => response.json())
       .then(data => setProducts(data))
@@ -23,20 +22,15 @@ const ProductListing = () => {
   }, [search, products]);
 
   const addToCart = (product) => {
-    // Get existing cart items from localStorage
     const cart = JSON.parse(localStorage.getItem('cart')) || [];
 
-    // Check if the item is already in the cart
     const existingItem = cart.find(item => item.id === product.id);
     if (existingItem) {
-      // Update quantity if item is already in the cart
       existingItem.quantity += 1;
     } else {
-      // Add new item to the cart
       cart.push({ ...product, quantity: 1 });
     }
 
-    // Save updated cart back to localStorage
     localStorage.setItem('cart', JSON.stringify(cart));
 
     alert('Item added to cart!');
